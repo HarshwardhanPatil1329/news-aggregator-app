@@ -1,2 +1,101 @@
 @import "./reset.css";
+html,
+body {
+    background: #212121;
+    color: white;
+}
 
+.site-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 16px;
+    width: 280px;
+    margin: 16px auto;
+    border: 1px solid yellow;
+}
+
+.search-container {
+    margin-left: 7%;
+}
+
+#search {
+    width: 90%;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid yellow;
+    color: #fff;
+    background: transparent;
+}
+
+#search:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 5px 0 yellow;
+    transition: all 0.4s;
+}
+
+#news-articles {
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 50px;
+    list-style-type: none;
+}
+
+li.article {
+    padding: 16px;
+    border-radius: 10px;
+    background: #393939;
+    position: relative;
+    cursor: pointer;
+    transform: scale(1);
+}
+
+li.article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 0 yellow;
+}
+
+h2.article-title {
+    margin: 16px 0;
+    line-height: 24px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+p.article-description {
+    margin-bottom: 16px 0;
+    overflow: hidden;
+    line-height: 24px;
+    color: #ddd;
+}
+
+img.article-img {
+    width: 100%;
+    height: auto;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+span.article-author {
+    display: block;
+    color: lightblue;
+    text-align: right;
+}
+
+a.article-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.not-found {
+    display: none;
+}
