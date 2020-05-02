@@ -63,7 +63,7 @@ $(document).ready(function() {
                     if (output2 !== "") {
                         document.getElementById("news-articles").innerHTML = output2;
                     } else {
-                        $("#news-articles").html("<h3>No article was found based on the search.</h3>");
+                        $("#news-articles").html("<p class="not-found">No article was found based on the search.</p>");
                     }
                 }
             });
